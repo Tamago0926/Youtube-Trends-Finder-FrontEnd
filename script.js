@@ -69,11 +69,11 @@ function put_html () {
         video_image.id = "video_image";
         video_title.innerHTML = save_res_data[i].title;
         video_title.id = "video_title";
-        video_url.innerHTML = "Go to Video";
+        video_url.innerHTML = "動画を見る";
         video_url.href = save_res_data[i].url;
         video_url.id = "video_url";
         video_url.target = "_blank";
-        video_channel.innerHTML = "Go to Channel";
+        video_channel.innerHTML = "チャンネルを見る";
         video_channel.href = save_res_data[i].channel;
         video_channel.id = "video_channel";
         video_channel.target = "_blank";
@@ -115,3 +115,4 @@ function put_html () {
 
 
 get_main_trend();
+
