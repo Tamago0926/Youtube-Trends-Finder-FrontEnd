@@ -5,7 +5,7 @@ const api_URL = "https://youtube-trends-finder.onrender.com/"
 
 async function get_main_trend() {
     try {
-        const res = await fetch(`${api_URL}/youtube/main_trend/data`);
+        const res = await fetch(`${api_URL}youtube/main_trend/data`);
         const data = await res.json();
         save_res_data = data;
         console.log(data);
@@ -112,5 +112,6 @@ function put_html () {
     display_items.innerHTML = "";
     display_items.appendChild(ul);
 }
+
 
 get_main_trend();
