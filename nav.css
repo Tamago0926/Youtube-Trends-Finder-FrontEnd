@@ -57,7 +57,7 @@
     }
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1400px) {
     nav ul {
         background-color: red;
         width: 100%;
@@ -180,4 +180,5 @@
     #word_trends {
         margin-left: 3vw;
     }
+
 }
