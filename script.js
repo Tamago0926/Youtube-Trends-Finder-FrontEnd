@@ -59,7 +59,7 @@ const countries_codes = [
     "MN", "ME", "NP", "OM", "JP", "JO", "KZ", "KR", "KW", "LA"
 ]
 
-const api_URL = "http://localhost:8080/";
+const api_URL = "https://youtube-trends-finder.onrender.com/";
 
 async function get_main_trend() {
     try {
@@ -240,4 +240,5 @@ function input_countries () {
 }
 
 input_countries();
+
 get_main_trend();
