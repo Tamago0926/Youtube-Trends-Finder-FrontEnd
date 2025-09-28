@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Trends Finder</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="title">
+            <a href="#"><span>Youtube Trends Finder</span><ion-icon name="logo-youtube" class="youtube_icon"></ion-icon></a>
+            </li>
+            <li id="word_trends" class="nav_section">キーワードごとのトレンド</li>
+            <li id="country_trends" class="nav_section">国ごとのトレンド</li>
+        </ul>
+    </nav>
+    <div id="display_title">Youtube Trends Finder</div>
+    <div id="choose_country"><label for="country_label" id="country_label"></label><select name="country_label" id="country_label_select"><option value="" disabled selected>国を選択してください</option></select></div>
+    <section id="serch_buttons">
+        <input type="text" id="search_text" placeholder="キーワードを入力">
+        <button id="serch_button" onclick="search_trend()">この条件で探す</button>
+    </section>
+    <section id="display_items"></section>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
