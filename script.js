@@ -6,6 +6,7 @@ const compare_trend = document.getElementById("compare_trends");
 const choose_country = document.getElementById("choose_country");
 const search_buttons = document.getElementById("serch_buttons");
 const select_country = document.getElementById("country_label_select");
+const load = document.getElementById("load");
 
 select_country.onchange = () => {
     get_choose_country(select_country.value);
@@ -68,6 +69,7 @@ async function get_main_trend() {
         save_res_data = data;
         console.log(data);
         put_html();
+        load.style.display = "none"
     } catch (error) {
         console.error("エラー", error);
     }
@@ -75,6 +77,7 @@ async function get_main_trend() {
 
 async function get_choose_country (country) {
     try {
+        load.style.display = ""
         const index = countries.indexOf(country);
         const code = countries_codes[index];
 
@@ -93,6 +96,7 @@ async function get_choose_country (country) {
         save_res_data = res;
         put_html();
         console.log(res);
+        load.style.display = "none"
     } catch (error) {
         console.error("エラー", error);
     }
@@ -100,6 +104,7 @@ async function get_choose_country (country) {
 
 async function search_trend() {
     try {
+        load.style.display = ""
         const req_text = document.getElementById("search_text").value;
         if (req_text === "") {
             return;
@@ -119,6 +124,7 @@ async function search_trend() {
         save_res_data = change_res;
         put_html();
         console.log(change_res);
+        load.style.display = "none"
     } catch (error) {
         console.error("エラー", error);
     }
@@ -242,3 +248,5 @@ function input_countries () {
 input_countries();
 
 get_main_trend();
+load.style.display = ""
+
