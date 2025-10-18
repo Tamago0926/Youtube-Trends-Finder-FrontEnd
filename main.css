@@ -578,6 +578,7 @@
   position: relative;
   left: 45vw;
   animation: sk-chase 2.5s infinite linear both
+  margin-top: 100px;
 }
 
 .sk-chase-dot {
@@ -627,6 +628,7 @@
     transform: scale(1.0); 
   } 
 }
+
 
 
 
