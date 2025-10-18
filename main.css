@@ -575,7 +575,7 @@
 .sk-chase {
   width: 100px;
   height: 100px;
-  position: flex;
+  position: relative;
   left: 45vw;
   animation: sk-chase 2.5s infinite linear both
 }
@@ -627,6 +627,7 @@
     transform: scale(1.0); 
   } 
 }
+
 
 
 
