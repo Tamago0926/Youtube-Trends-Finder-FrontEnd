@@ -77,7 +77,6 @@ async function get_main_trend() {
 
 async function get_choose_country (country) {
     try {
-        load.style.display = ""
         const index = countries.indexOf(country);
         const code = countries_codes[index];
 
@@ -96,7 +95,6 @@ async function get_choose_country (country) {
         save_res_data = res;
         put_html();
         console.log(res);
-        load.style.display = "none"
     } catch (error) {
         console.error("エラー", error);
     }
@@ -104,7 +102,6 @@ async function get_choose_country (country) {
 
 async function search_trend() {
     try {
-        load.style.display = ""
         const req_text = document.getElementById("search_text").value;
         if (req_text === "") {
             return;
@@ -124,7 +121,6 @@ async function search_trend() {
         save_res_data = change_res;
         put_html();
         console.log(change_res);
-        load.style.display = "none"
     } catch (error) {
         console.error("エラー", error);
     }
@@ -249,4 +245,5 @@ input_countries();
 
 get_main_trend();
 load.style.display = ""
+
 
