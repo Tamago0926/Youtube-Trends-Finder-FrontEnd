@@ -575,11 +575,9 @@
 .sk-chase {
   width: 100px;
   height: 100px;
-  position: fixed;
-  animation: sk-chase 2.5s infinite linear both;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  position: flex;
+  left: 45vw;
+  animation: sk-chase 2.5s infinite linear both
 }
 
 .sk-chase-dot {
@@ -629,6 +627,7 @@
     transform: scale(1.0); 
   } 
 }
+
 
 
 
